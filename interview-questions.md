@@ -42,7 +42,7 @@ Your answer:
 
 Researched answer:
 Based on my bootcamp notes:
-- Index: location of a character in a string, starts w/0
+- Index: location of a character in a string, starts w/ 0
 - Value: An element of data 
 
 
@@ -66,14 +66,14 @@ Researched answer:
 Your answer:
 
 - Pair Programming: When two people work together simutaenously on writing code
-- Driver: The person who is writing the actualy code and explaining their thought process as they go
+- Driver: The person who is writing the actual code and explaining their thought process as they go
 - Navigator: Gives direction to the Driver and helps review the code to catch any mistakes and/or offer input
 
 Researched answer:
 
 - Pair Programming: When two programmers work together at once
 - Driver: The person that writes the code and focuses on the tactical functions
-- Navigator: Reviews each line of code as it is typed in and provides strategic direction to the Driver
+- Navigator: Reviews each line of code as it is typed and provides strategic direction to the Driver
 - Roles should be switched frequently
 
 ## Looking Ahead: Terms for Next Week
@@ -82,7 +82,7 @@ Research and define the following terms to the best of your ability.
 
 1. Higher Order Functions: A function that can have other functions as parameters and/or returns a function
 
-2. Jest: JS testing framework -  I still don't really get it 
+2. Jest: JS testing framework -  Software where you can write tests that automatically run your code and check that it is working
 
 3. Objects: A variable that can contain many properties with many values 
 
