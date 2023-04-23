@@ -12,6 +12,8 @@ const colors = ["tangerine", "magenta", "lilac", "daffodil"]
 // a) Your answer:
 // b) Verify and explain:
 
+
+
 // --------------------1) What will this log?
 
 const cohort = "LEARN 2023"
@@ -19,7 +21,9 @@ const cohort = "LEARN 2023"
 
 // a) Your answer: 9
 // b) Verify and explain: 
-        //output: 10 - the .length method will tell us how many characters are in the string. It also includes the space as a character 
+        //output: 10 because the .length method will tell us how many characters are in the string. It also includes the space as a character which I missed. 
+
+
 
 // --------------------2) What will this log?
 
@@ -28,9 +32,13 @@ const greeting = "Hello World!"
 
 // a) Your answer: "o"
 // b) Verify and explain: 
-    // output: o - because the square brackets indicates we are asking for what character is located at the index of 4 within the string. 0 indexed
+    // output: "o"  because the square brackets indicates the index and the number 4 indicates what position in the index we would like to be output. Because index starts with 0, from left to right. See below breakdown:
     //         H e l l o  W o r l d ! 
     //index:   0 1 2 3 4  5 6 7 8 9 10
+
+
+
+
 
 // --------------------3) What will this log?
 
@@ -40,7 +48,7 @@ const index = 1
 
 // a) Your answer: Ruby
 // b) Verify and explain: 
-    // output: Ruby - In line 39 of console.log the computer interprets [index] as 1 due to previously declaring the variable, index = 1. and reads it as console.log(languages[1]). Because the square brackets indicate index the console.log is asking what element is at the 1 index location of the array named languages.
+    // output: Ruby - In console.log the computer interprets [index] as 1 due to previously declaring the variable, index = 1. and reads it as console.log(languages[1]). Because the square brackets indicate index location the console.log is asking what element is at the 1 index location of the array named languages.
     //         ["JavaScript", "Ruby", "Python", "C++"]
     //index:       0             1      2         3  
 
@@ -50,24 +58,25 @@ const index = 1
 
 // --------------------4) What will this log?
 
-//const weekendDays = ["saturday", "sunday"]
+const weekendDays = ["saturday", "sunday"]
 //console.log(weekendDays.toUpperCase())
 
-// a) Your answer: SATURDAY, SUNDAY
+// a) Your answer: ["SATURDAY", "SUNDAY"]
 // b) Verify and explain:
-    // output: TypeError - Not a function. After some research I found that JS does not really support toUpperCase() on arrays. Instead I will have to change to a string, capitalize and revert back to an array. 
-    const weekendDays = ["saturday", "sunday"]
-    let newName = weekendDays.toString()
-    newName = newName.toUpperCase()
-    newName = newName.split(',')
+    // output: TypeError - Not a function. After some research I found that JS does not really support toUpperCase() on arrays. In order to get the output [SATURDAY, SUNDAY] I haven chosen to change the array to a string, capitalize the string and then revert thet string back into an array. 
+    // const weekendDays = ["saturday", "sunday"]
+    // let newName = weekendDays.toString()
+    // newName = newName.toUpperCase()
+    // newName = newName.split(',')
 
    //console.log(newName)
 
+//OR
 
-   let test = weekendDays.toString().toUpperCase().split(',')
-   console.log(test)
+    // const test = weekendDays.toString().toUpperCase().split(',')
+    // console.log(test)
+    // output: ['SATURDAY, 'SUNDAY]
 
-//lost on how to convert back into array but I think it has something to do with the method split()
 
 
 
@@ -79,10 +88,10 @@ const dataTypes = ["number", "string", "Boolean", "undefined"]
 
 // a) Your answer:   number 
 // b) Verify and explain: 
-//output: number
+// output: number
 // in the console.log it is asking for:
-//the typeof: which is asking what type of data follows... dataTypes.length 
-//dataTypes.length is asking for the number of elements in the dataTypes array 
+// the typeof: which is asking what type of data follows... dataTypes.length 
+// dataTypes.length is asking for the number of elements in the dataTypes array 
     // the dataTypes array has 4 elements
     // dataTypes.length = 4
     // (typeof 4) = number (4 is the primitive data type - number)
