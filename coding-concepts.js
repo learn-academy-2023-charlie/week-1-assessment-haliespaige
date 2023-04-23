@@ -47,7 +47,7 @@ const index = 1
 
 
 
-    
+
 // --------------------4) What will this log?
 
 //const weekendDays = ["saturday", "sunday"]
@@ -55,12 +55,19 @@ const index = 1
 
 // a) Your answer: SATURDAY, SUNDAY
 // b) Verify and explain:
-    // output: TypeError - Not a function. After some research I found that JS does not really support toUpperCase() on arrays. Instead I will have to create a for loop or change to a string
+    // output: TypeError - Not a function. After some research I found that JS does not really support toUpperCase() on arrays. Instead I will have to change to a string, capitalize and revert back to an array. 
     const weekendDays = ["saturday", "sunday"]
     let newName = weekendDays.toString()
-   // console.log(newName.toUpperCase())
-//lost on how to convert back into array but I think it has something to do with the method split()
+    newName = newName.toUpperCase()
+    newName = newName.split(',')
 
+   //console.log(newName)
+
+
+   let test = weekendDays.toString().toUpperCase().split(',')
+   console.log(test)
+
+//lost on how to convert back into array but I think it has something to do with the method split()
 
 
 
@@ -68,7 +75,7 @@ const index = 1
 // --------------------5) What will this log?
 
 const dataTypes = ["number", "string", "Boolean", "undefined"]
-console.log(typeof dataTypes.length)
+//console.log(typeof dataTypes.length)
 
 // a) Your answer:   number 
 // b) Verify and explain: 
