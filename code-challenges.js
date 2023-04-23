@@ -9,20 +9,27 @@
 // Pseudo code:
 
 // Set one:
-const fruit1 = "apple"
-const fruit2 = "banana"
-// Expected outcome: "banana"
+// const fruit1 = "apple"
+// const fruit2 = "banana"
+// // Expected outcome: "banana"
 
-// Set two:
-const fruit3 = "cherry"
-const fruit4 = "kiwi"
-// Expected outcome: "cherry"
+// // Set two:
+// const fruit3 = "cherry"
+// const fruit4 = "kiwi"
+// // Expected outcome: "cherry"
 
 // --------------------1) Create a function that takes in a number and determines if the given number is below boiling point, at boiling point, or above boiling point. Boiling point is 212 degrees Fahrenheit. Use the test variables provided below.
 
 // Pseudo code:
+//Function name: boilingPoint
+// input: num1 (number datatype)
+// output: string stating whether the input is below boiling point, at boiling point or above boiling point
+// process: create a function called boilingPoint that takes in the variable at fahrenheit called num1 and returns a string that determines (conditional tool)
+// if num1 is less than 212 then it is below boiling point
+// if num1 is equal to 212 then it is at boiling point
+// if num1 is greater thatn 212 then it is above boiling point
 
-const temperature1 = 42
+const temperature1 = 42 
 // Expected output: "42 is below boiling point"
 
 const temperature2 = 350
@@ -31,13 +38,43 @@ const temperature2 = 350
 const temperature3 = 212
 // Expected output: "212 is at boiling point"
 
+
+const boilingPoint = (num1) => {
+    if (num1 < 212) {
+    return `${num1} is below boiling point`
+    }
+    else if (num1 > 212) {
+        return `${num1} is above boiling point`
+    }
+    else {
+        return `${num1} is at boiling point`
+    }
+}
+
+console.log(boilingPoint(temperature1))
+//output: 42 is below boiling point
+
+console.log(boilingPoint(temperature2))
+//output: 350 is above boiling point
+
+console.log(boilingPoint(temperature3))
+//output: 212 is at boiling point
+
 // --------------------2) Create the code that will combine the two arrays and return the length using the test variables provided below.
 
 // Pseudo code:
 
+// Name: combinedArrayLength
+// input: array1, array2
+// output: length of array1 and array2 combined 
+// process: create a function named combinedArrayLength that will determine the length of array1 and array2 combined and return a number datatype. (.length method)
+
 const padres1984WorldSeriesRuns = [2, 5, 2, 2, 4]
 const padres1998WorldSeriesRuns = [6, 3, 5, 3]
 // Expected output: 9
+
+
+
 
 // --------------------3) Create the code that will reverse the letters of a string using the test variable provided below.
 
